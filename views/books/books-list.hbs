@@ -5,6 +5,9 @@
         <h3>{{this.title}}</h3>
         <h4>By: {{this.author}}</h4>
         <a href="/books/{{_id}}">More details</a>
+        <form action="/books/{{_id}}/delete" method="post">
+            <button> Delete </button>
+        </form>
     </div>
 {{/each}}
 </ul>
